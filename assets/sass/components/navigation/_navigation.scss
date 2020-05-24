@@ -1,0 +1,21 @@
+.list-number-next-tab{
+	margin-bottom: 30px;
+	ul{
+		li{
+			display: inline-block;
+			a{
+				display: block;
+				font-size: 14px;				
+				text-align: center;
+				padding:7px 15px;
+				border:1px solid #ddd;
+				color: #465363;
+			}
+			.active{
+				border:1px solid #d60c0c;
+				background-color: #d60c0c;
+				color: white;
+			}
+		}
+	}
+}
