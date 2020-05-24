@@ -1,6 +1,6 @@
 
-$font-helvetica: 'Helvetica Neue';
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+$font-web: 'Open Sans', sans-serif;
 html,
 body,
 div,
@@ -146,9 +146,7 @@ table {
 body,
 html {
   font-size: 14px;
-  font-family: $font-helvetica;
-  margin-top: 20px !important;
-  border-top:1px solid #ccc;
+  font-family: $font-web;
 }
 
 a {
@@ -181,18 +179,3 @@ p {
     max-width: 1200px;
   }
 }
-
-@media screen and (min-width: 1300px) {
-  .container{
-    max-width: 1330px;
-  }
-}
-
-@media screen and (min-width: 1500px) {
-  .container{
-    max-width: 1440px;
-  }
-}
-
-
-

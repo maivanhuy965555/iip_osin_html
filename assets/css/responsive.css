@@ -47,5 +47,16 @@
 /* 767 */
 
 @media screen and (max-width: 767.5px) {
-	
+	.registration{
+		flex-direction: column;
+	}
+	.registration .language{
+		flex-wrap: wrap;
+		position: relative;
+		bottom:0;
+		margin-top:auto;
+	}
+	.registration .language a{
+		padding:10px;
+	}
 }
