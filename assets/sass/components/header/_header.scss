@@ -1,0 +1,137 @@
+
+.header{
+	height: 60px;
+	box-shadow: 0 0 10px #ccc;
+	&_logo{
+		padding:5px 0px;
+	}
+	&_menu-login{
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		.nav{
+			ul{
+				li{
+					position: relative;
+					display: inline-block;
+					line-height: 60px;
+					padding:0px 20px;
+					&:hover{
+						ul{
+							@include custom_visi_block;
+						}
+					}
+					ul{
+						position: absolute;
+						top: 100%;
+						left: 0;
+						width: max-content;
+						z-index: 99;
+						box-shadow: 0 0 10px #ccc;
+						background:#fff;
+						@include custom_visi_hide;
+						li{
+							display: block;
+							line-height: 1.5;
+							padding:10px 15px;
+							border-bottom: 1px solid #ddd;
+							&:hover{
+								background:$color-290;
+								a{
+									color: #fff;
+								}
+							}
+							&:last-child{
+								border:0;
+							}
+							&:first-child{
+								padding-left: 15px;
+							}
+							a{
+								font-weight: 500;
+							}
+						}
+					}
+					&:first-child{
+						padding-left: 0;
+					}
+					a{
+						font-size: 14px;
+						color: #3B3B3D;
+						font-weight: 600;
+						&:hover{
+							color: $color-290;
+						}
+					}
+				}
+			}
+		}
+		.login{
+			padding-left: 80px;
+			display: flex;
+			align-items: center;
+			a{
+				display: flex;
+				align-items: center;
+				font-size: 14px;
+				color: #3B3B3D;
+				font-weight: 600;
+				&:hover{
+					color: $color-290;
+				}
+				span{
+					padding-left: 10px;
+				}
+			}
+			.icon-mobile{
+				position: relative;
+				top: 0;
+				left: 0;
+				width: auto;
+				height: auto;
+				min-height:auto;
+				margin-right: 10px;
+				display: none;
+				svg{
+					width: 30px;
+					height: 25px;
+					fill:#000;
+				}
+			}
+			.search-mobile{
+				margin-right: 10px;
+				display: none;
+				svg{
+					width: 25px;
+					height: 25px;
+					fill:#000;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.header_menu-login .nav ul li{
+		padding:0px 10px;
+	}
+}
+@media screen and (max-width: 991px) {
+	.header_menu-login .nav{
+		display: none;
+	}
+	.header{
+		height: auto;
+	}
+	.header_menu-login .login{
+		padding-left: 0;
+	}
+	.header_menu-login .login a span{
+		display: none;
+	}
+}
+@media screen and (max-width: 767px) {
+	.header_menu-login .login a span{
+		display: none;
+	}
+}
